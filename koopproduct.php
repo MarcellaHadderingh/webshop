@@ -26,7 +26,7 @@ catch(PDOException $e) {
 	
 $conn = NULL;
 
-header("Location: index.php");
+header("Location: product.php");
 
 
 ?>
