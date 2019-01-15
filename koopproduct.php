@@ -4,7 +4,7 @@
 
 
 $productid = $_GET['productid'];
-$besteller = 'floris@codegorilla.nl';
+$besteller = 'marcellavanduyn@gmail.com';
 $tebetalen = 0.00;
 
 $tebetalen = dblookup("producten", "prijs", $productid);
