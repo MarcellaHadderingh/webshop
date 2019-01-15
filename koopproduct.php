@@ -1,7 +1,5 @@
-
 <?php
     include_once("dblib.php");
-
 
 $productid = $_GET['productid'];
 $besteller = 'marcellavanduyn@gmail.com';
