@@ -52,6 +52,13 @@ nav a:hover {
     margin: 30px;
 }
 
+.wrapper21 {
+    margin: 30px;
+    padding: 20px;
+    background-color: #373E51;
+    color: white;
+}
+
 .wrapper3 {
     margin: 40px;
 }
@@ -67,6 +74,7 @@ nav a:hover {
 }
 
 .filterbox {
+    margin-top: 30px;
     margin-left: 50px;
 }
 

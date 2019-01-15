@@ -1,4 +1,3 @@
-
 <?php
 
 $productid = $_GET['productid'];
@@ -13,11 +12,11 @@ try {
     'fid' => $productid
     ]);
 	
-}
+} 
 catch(PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
-	
+
 $conn = NULL;
 
 header("Location: index.php");
