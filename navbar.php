@@ -8,7 +8,8 @@
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="producttoevoegen.php">Add Product</a></li>
+                <li><a href="product.php">Fruit bestellen</a></li>
+                <li><a href="producttoevoegen.php">Product Toevoegen</a></li>
                 <li><a href="toonbestellingen.php">Bestellingen</a></li>
             </ul>
         </nav>
