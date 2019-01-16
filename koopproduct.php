@@ -2,7 +2,7 @@
     include_once("dblib.php");
 
 $productid = $_GET['productid'];
-$besteller = 'marcellavanduyn@gmail.com';
+$besteller = 'marcella@gmail.com';
 $tebetalen = 0.00;
 
 $tebetalen = dblookup("producten", "prijs", $productid);
