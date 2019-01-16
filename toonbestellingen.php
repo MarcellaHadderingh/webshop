@@ -4,7 +4,7 @@
 
 <body>
 
-<div class="container-fluid">
+<div class="wrapper21">
 
 <h2>Bestellingen</h2>
 
@@ -17,8 +17,7 @@ try {
 	$stmt = $conn->query("SELECT * FROM bestellingen");
 	while ($row = $stmt->fetch()) {
         echo '<li>' . 'ID ' . $row['id'] . ' | ';
-        echo 'E-mail ' . $row['email'] . ' | ';
-        echo 'Product ID ' . $row['productid'] . ' | ';
+        echo '' . $row['email'] . ' | ';
         echo '&euro; ' . $row['tebetalen'];
         echo '</li>';
 

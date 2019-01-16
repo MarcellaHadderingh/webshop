@@ -1,6 +1,6 @@
 <?php include('navbar.php'); ?>
 <body>
-    <div class="wrapper1">
+    <div class="wrapper21">
         <h1 class="productlist-title" >Product toevoegen</h1>
             <div class="updateform">
                 <form action="dbproducttoevoegen.php" method="POST">

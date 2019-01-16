@@ -6,6 +6,13 @@
 
        
         <h2 class="productlist-title">Fresh Fruit</h2>
+        <div class="filterbox">
+            <form>
+                <input type="text" name="naamfilter" placeholder="Fruitsoorten...">
+                <button class="btn-search" type="submit" value="filter">Search</button>
+                <button class="btn-search" type="submit" value="">Clear Search</button>
+            </form>
+        </div>
         <div class="productlist">
         <?php
 
@@ -40,18 +47,9 @@ $conn = NULL;
 
 ?>
         </div>
-        <div class="filterbox">
-            <form>
-                <input type="text" name="naamfilter" placeholder="Fruitsoorten...">
-                <button class="btn-search" type="submit" value="filter">Search</button>
-                <button class="btn-search" type="submit" value="">Clear Search</button>
-            </form>
+        <div class="product">
+        <button class="btn-search" type="submit" value=""><a href="producttoevoegen.php">Product Toevoegen</a></button>
         </div>
-        
-        <div class="wrapper3">
-          <hr>
-
-        <?php include("dbbestellingen.php"); ?>
         
     </div>
 </body>
