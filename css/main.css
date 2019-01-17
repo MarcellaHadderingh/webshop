@@ -64,6 +64,15 @@ nav a:hover {
     float: right;
 }
 
+.wrapper31 {
+    margin: 80px;
+    padding: 40px;
+    background-color: #373E51;
+    width: 600px;
+    color: white;
+    float: right;
+}
+
 .wrapper3 {
     margin: 40px;
 }
@@ -81,6 +90,7 @@ nav a:hover {
 .filterbox {
     margin-top: 30px;
     margin-left: 50px;
+    float: right;
 }
 
 hr {
@@ -90,4 +100,13 @@ hr {
 .product {
     margin-top: 20px;
     margin-left: 50px;
+    float: right;
+}
+
+#table {
+    width: 100%;
+    color: #943955;
+    background-color: aliceblue;
+    margin: auto;
+    padding: 10px;
 }
