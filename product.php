@@ -2,10 +2,11 @@
 <?php include('navbar.php'); ?>
 
 <body>
-    <div class="wrapper21">
+    <div class="wrapper31">
 
        
         <h2 class="productlist-title">Fresh Fruit</h2>
+        <h4 class="productlist-title">Bestel hier je verse Fruit.</h4>
         <div class="filterbox">
             <form>
                 <input type="text" name="naamfilter" placeholder="Fruitsoorten...">
@@ -29,14 +30,26 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $stmt = $conn->query("SELECT * FROM producten WHERE naam LIKE '%$naamfilter%' ");
+    echo '<table class="table table-striped" id= "table">
+    <thead></thead>
+     <tr>
+    <th>Product</th>
+    <th>Prijs</th>
+    </tr>
+    </thead>
+    <tbody>';
     while ($row = $stmt->fetch()) {
                 //en het weergeven als pagina naar gebruiker als HTML
-                echo '<li>' . $row['naam'] . '  € ' . $row['prijs'] . "<BR>";
-                echo '<a class="btn-update" href="koopproduct.php?productid=' . $row['id'] . '">Koop </a>';
-                echo '<a class="btn-update" href="productbewerken.php?productid=' . $row['id'] . '">Wijzig </a>';
-                echo '<a class="btn-delete" href="dbproductverwijderen.php?productid=' . $row['id'] . '">Verwijder </a>';
-                echo '</li>';
-            }
+        
+                echo '<tr>';
+                echo '<td>' . $row['naam'] . '</td>' . '<td>' . '  € ' . $row['prijs'] . "</td>";
+                echo '<td><a class="btn-update" href="koopproduct.php?productid=' . $row['id'] . '"><i class="fas fa-shopping-cart"></i></a></td>';
+                echo '<td><a class="btn-update" href="productbewerken.php?productid=' . $row['id'] . '"><i class="far fa-edit"></i> </a></td>';
+                echo '<td><a class="btn-delete" href="dbproductverwijderen.php?productid=' . $row['id'] . '"><i class="far fa-trash-alt"></i> </a></td>';
+                echo  '</tr>';
+             }
+          echo  '</tbody>
+              </table>';
 }
 
 catch(PDOExeption $e) {
