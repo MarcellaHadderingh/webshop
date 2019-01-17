@@ -18,6 +18,7 @@
                 <li><a href="product.php">Fruit bestellen</a></li>
                 <li><a href="producttoevoegen.php">Product Toevoegen</a></li>
                 <li><a href="toonbestellingen.php">Bestellingen</a></li>
+                <li><a href="bestellen.php"><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
        </div>
        
